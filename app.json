@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "visual",
+    "name": "Visual",
+    "scheme":"visual",
     "slug": "visual",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,10 +19,20 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package":"com.jsm.visual"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ]
   }
 }
